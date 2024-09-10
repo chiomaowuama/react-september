@@ -52,9 +52,9 @@ function Intro(props) {
 }
 function SkillList(props) {
   const skillStyles = {
-    skillOne: { backgroundColor: "blue", padding: "10px", margin: "5px" },
-    skillTwo: { backgroundColor: "yellow", padding: "10px", margin: "5px" },
-    skillThree: { backgroundColor: "grey", padding: "10px", margin: "5px" },
+    skillOne: { backgroundColor: "blue", padding: "6px", margin: "5px" },
+    skillTwo: { backgroundColor: "yellow", padding: "6px", margin: "5px" },
+    skillThree: { backgroundColor: "grey", padding: "6px", margin: "5px" },
   };
   return (
     <div className="skillslists">
