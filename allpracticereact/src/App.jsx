@@ -14,7 +14,7 @@ function App() {
 
 function Theprofile() {
   return (
-    <div>
+    <div className="container">
       <Avatar PhotoName="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rZoL-mWKEjFdKs6jpjw-WoObrXm7zClR7w&s" />
       <div>
         <Intro
