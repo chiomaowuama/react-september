@@ -37,8 +37,8 @@ function Theprofile() {
 
 function Avatar(props) {
   return (
-    <div>
-      <img src={props.PhotoName} alt="" srcset="" />
+    <div className="Avartashell">
+      <img src={props.PhotoName} alt="" srcset="" className="Avartaimg" />
     </div>
   );
 }
