@@ -44,7 +44,7 @@ function Avatar(props) {
 }
 function Intro(props) {
   return (
-    <div>
+    <div className="intro">
       <h1>{props.PersonName}</h1>
       <p>{props.Description}</p>
     </div>
@@ -52,12 +52,12 @@ function Intro(props) {
 }
 function SkillList(props) {
   const skillStyles = {
-    skillOne: { backgroundColor: "red", padding: "10px", margin: "5px" },
-    skillTwo: { backgroundColor: "green", padding: "10px", margin: "5px" },
-    skillThree: { backgroundColor: "blue", padding: "10px", margin: "5px" },
+    skillOne: { backgroundColor: "blue", padding: "10px", margin: "5px" },
+    skillTwo: { backgroundColor: "yellow", padding: "10px", margin: "5px" },
+    skillThree: { backgroundColor: "grey", padding: "10px", margin: "5px" },
   };
   return (
-    <div>
+    <div className="skillslists">
       <p style={skillStyles.skillOne}>{props.SkillOne}</p>
       <p style={skillStyles.skillTwo}>{props.SkillTwo}</p>
       <p style={skillStyles.skillThree}>{props.SkillThree}</p>

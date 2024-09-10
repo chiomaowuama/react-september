@@ -1,6 +1,6 @@
 .container {
   border: 2px solid green;
-  width: 28%;
+  width: 25%;
 }
 .Avartashell {
   width: 100%;
@@ -8,4 +8,34 @@
 .Avartaimg {
   width: 100%;
   display: block;
+}
+.intro {
+  /* padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro h1 {
+  margin-bottom: 15px;
+}
+.intro p {
+  /* text-align: center; */
+  width: 84%;
+  margin-bottom: 0;
+}
+.skillslists {
+  display: flex;
+  justify-content: start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+.skillslists p {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
 }
