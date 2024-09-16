@@ -26,7 +26,7 @@ function Theprofile() {
       </div>
       <div>
         <SkillList
-          SkillOne="HTML + CSS"
+          SkillOne="HTML + CSS 💪"
           SkillTwo="Javascript"
           SkillThree="Web design"
         />
