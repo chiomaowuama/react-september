@@ -2,6 +2,39 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
+const skills = [
+  {
+    skill: "HTML+CSS",
+    level: "advanced",
+    color: "#2662EA",
+  },
+  {
+    skill: "JavaScript",
+    level: "advanced",
+    color: "#EFD81D",
+  },
+  {
+    skill: "Web Design",
+    level: "advanced",
+    color: "#C3DCAF",
+  },
+  {
+    skill: "Git and GitHub",
+    level: "intermediate",
+    color: "#E84F33",
+  },
+  {
+    skill: "React",
+    level: "advanced",
+    color: "#60DAFB",
+  },
+  {
+    skill: "Svelte",
+    level: "beginner",
+    color: "#FF3B00",
+  },
+];
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,6 +46,8 @@ function App() {
 }
 
 function Theprofile() {
+  const allSkills = skills;
+  console.log(allSkills);
   return (
     <div className="container">
       <Avatar PhotoName="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rZoL-mWKEjFdKs6jpjw-WoObrXm7zClR7w&s" />
@@ -24,13 +59,12 @@ function Theprofile() {
           to just enjoy the portuguese sun at the beach."
         />
       </div>
-      <div>
-        <SkillList
-          SkillOne="HTML + CSS 💪"
-          SkillTwo="Javascript"
-          SkillThree="Web design"
-        />
-      </div>
+
+      <ul>
+        {allSkills.map((allskill) => (
+          <SkillList skillObj={allskill} key={allskill.skill} />
+        ))}
+      </ul>
     </div>
   );
 }
@@ -50,19 +84,14 @@ function Intro(props) {
     </div>
   );
 }
+
 function SkillList(props) {
-  const skillStyles = {
-    skillOne: { backgroundColor: "blue", padding: "6px", margin: "5px" },
-    skillTwo: { backgroundColor: "yellow", padding: "6px", margin: "5px" },
-    skillThree: { backgroundColor: "grey", padding: "6px", margin: "5px" },
-  };
   return (
-    <div className="skillslists">
-      <p style={skillStyles.skillOne}>{props.SkillOne}</p>
-      <p style={skillStyles.skillTwo}>{props.SkillTwo}</p>
-      <p style={skillStyles.skillThree}>{props.SkillThree}</p>
-      <p></p>
-    </div>
+    <li className="skillslists">
+      <h2>{props.skillObj.skill}</h2>
+      <p>{props.skillObj.color}</p>
+      <p>{props.skillObj.level}</p>
+    </li>
   );
 }
 export default App;
